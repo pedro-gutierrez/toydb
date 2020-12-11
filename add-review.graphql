@@ -1,0 +1,16 @@
+mutation {
+  addReview(input: [{
+    by: {username: "Michael"}, 
+    about: { productID: "0x2"},
+    country: "Spain",
+    comment: "Fantastic, easy to install, worked great.  Best GraphQL server available",
+    rating: 10}]) 
+  {
+    review {
+      comment
+      rating
+      by { username }
+      about { name }
+    }
+  }
+}

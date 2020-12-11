@@ -1,0 +1,11 @@
+query {
+  queryReview(filter: { comment: {alloftext: "easy to install"}}) {
+    comment
+    by {
+      username
+    }
+    about {
+      name
+    }
+  }
+}
