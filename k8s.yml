@@ -42,7 +42,7 @@ spec:
               protocol: TCP
           env:
             - name: DGRAPH_ALPHA_GRAPHQL_EXTENSIONS
-              value: "true"
+              value: "false"
           volumeMounts:
             - mountPath: /dgraph
               name: data
